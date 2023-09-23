@@ -1,0 +1,8 @@
+// Routes for sending and scheduling messages
+app.post('/api/send', (req, res) => {
+  // Save the message to the database
+});
+
+app.post('/api/schedule', (req, res) => {
+  // Save the message with scheduledTime to the database
+});

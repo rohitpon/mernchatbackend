@@ -1,0 +1,33 @@
+﻿
+
+Software
+Hardware
+SECTION 2.7 NETWORK ARCHITECTURE AND THE OSI REFERENCE MODEL 67
+Application (7)
+Provides user-application services and
+procedures
+Presentation (6)
+Structures data in a mutually agreed
+Application or
+format: concerned with issues such as how Service-Oriented to code and format data; includes data
+encryption Session (5)
+Controls process communications; responsible for segmenting, buffering, and synchronization
+Transport (4)
+Provides end-to-end control; responsible for partitioning and reassembling messages
+Network (3)
+Provides routing services for transferring data across the network; performs network management, packet formatting
+Data Link (2)
+Organizes data into frames; provides flow initialization, flow control, link termination,
+and error control
+Physical (1)
+Transfers bits across link, defines physical
+characteristics of media
+Layers
+Delivery and
+Verification Services
+Communication or Network- Oriented Layers
+FIGURE 2.16 Another view of the OSI layers. Source: adapted from Conrad, 1988b.
+rovide additional information about OSI layers. (For readers who want to compare the OSI model to the TCP/IP model, see Figures 8.8, 8.9, and 8.10.)
+SI Service Types
+There are two different types of services OSI layers provide: connection-oriented and onnectionless. Some layers also include multiplexing as an additional service, but this oes not necessarily transcend all layers of the architecture. Services are available at rvice access points (SAPS), with each SAP having a corresponding address.
+onnection-Oriented Service This type of service implies that prior to the transfer data a physical (and virtual) link is established between the sending and receiving des. This link remains in effect for the duration of the session. After the session is mpleted, the link is removed. Characteristics of a connection-oriented service in- ade: wasted bandwidth, because the link must remain established even during idle pe- ds of a transmission: a high potential for a hung network, since there is always a sibility that a link will not be terminated; and (on the bright side) guaranteed sequential

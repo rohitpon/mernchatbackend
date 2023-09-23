@@ -1,0 +1,24 @@
+// Component for composing and scheduling messages
+function MessageComposer() {
+  const [message, setMessage] = useState('');
+  const [scheduledTime, setScheduledTime] = useState(null);
+
+  const handleSend = () => {
+    // Make an API call to send/schedule the message
+  };
+
+  return (
+    <div>
+      <textarea
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+      />
+      <input
+        type="datetime-local"
+        value={scheduledTime}
+        onChange={(e) => setScheduledTime(e.target.value)}
+      />
+      <button onClick={handleSend}>Send/Schedule</button>
+    </div>
+  );
+}
